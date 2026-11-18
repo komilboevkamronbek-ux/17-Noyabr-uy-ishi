@@ -107,6 +107,11 @@ class MyDate:
 # print(sana)
 
 # Test Case 2: Oy oxiri (Kelasi kun)
-sana = MyDate(30, 4, 2023)
+# sana = MyDate(30, 4, 2023)
+# sana.nextDay()
+# print(sana)  # 01-May 2023 yil
+
+# Test Case 3: Yil oxiri (Kelasi kun)
+sana = MyDate(31, 12, 2023)
 sana.nextDay()
-print(sana)  # 01-May 2023 yil
+print(sana)  # 01-Yanvar 2024 yil

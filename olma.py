@@ -104,7 +104,7 @@ class MyDate:
 # Test Case 1: Oddiy sana o'tkazish (Kelasi kun)
 # sana = MyDate(15,6,2023)
 # sana.nextDay()
-# print(sana)
+# print(sana) #16-Iyun 2023 yil
 
 # Test Case 2: Oy oxiri (Kelasi kun)
 # sana = MyDate(30, 4, 2023)
@@ -112,6 +112,11 @@ class MyDate:
 # print(sana)  # 01-May 2023 yil
 
 # Test Case 3: Yil oxiri (Kelasi kun)
-sana = MyDate(31, 12, 2023)
-sana.nextDay()
-print(sana)  # 01-Yanvar 2024 yil
+# sana = MyDate(31, 12, 2023)
+# sana.nextDay()
+# print(sana)  # 01-Yanvar 2024 yil
+
+#Test Case 4: Oy boshlari (O'tgan kun)
+sana = MyDate(1, 5, 2023)
+sana.previousDay()
+print(sana)  # 30-Aprel 2023 yil

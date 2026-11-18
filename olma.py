@@ -127,6 +127,11 @@ class MyDate:
 # print(sana)  # 29-Fevral 2024 yil
 
 #Test Case 6: Kabisa yili (Fevral 29 dan keyin)
-sana = MyDate(29, 2, 2024)
+# sana = MyDate(29, 2, 2024)
+# sana.nextDay()
+# print(sana)  # 01-Mart 2024 yil
+
+#Test Case 7: Kabisa bo'lmagan yilda fevral uchun max kun
+sana = MyDate(28, 2, 2023)
 sana.nextDay()
-print(sana)  # 01-Mart 2024 yil
+print(sana)  # 01-Mart 2023 yil

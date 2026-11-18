@@ -160,6 +160,13 @@ class MyDate:
 #     print(e)  # Noto'g'ri sana kiritildi!
 
 #Test Case 12: Sana o'zgartirish (setDate())
-sana = MyDate(15, 6, 2023)
-sana.setDate(5, 7, 2023)
-print(sana)  # 05-Iyul 2023 yil
+# sana = MyDate(15, 6, 2023)
+# sana.setDate(5, 7, 2023)
+# print(sana)  # 05-Iyul 2023 yil
+
+#Test Case 13: Sana noto'g'ri o'zgartirish (setDate())
+try:
+    sana = MyDate(15, 6, 2023)
+    sana.setDate(31, 4, 2023)
+except ValueError as e:
+    print(e)  # Noto'g'ri sana kiritildi!

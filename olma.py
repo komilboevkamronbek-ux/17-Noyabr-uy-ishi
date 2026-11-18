@@ -117,6 +117,11 @@ class MyDate:
 # print(sana)  # 01-Yanvar 2024 yil
 
 #Test Case 4: Oy boshlari (O'tgan kun)
-sana = MyDate(1, 5, 2023)
-sana.previousDay()
-print(sana)  # 30-Aprel 2023 yil
+# sana = MyDate(1, 5, 2023)
+# sana.previousDay()
+# print(sana)  # 30-Aprel 2023 yil
+
+#Test Case 5: Kabisa yili (Fevral uchun max kun)
+sana = MyDate(28, 2, 2024)
+sana.nextDay()
+print(sana)  # 29-Fevral 2024 yil

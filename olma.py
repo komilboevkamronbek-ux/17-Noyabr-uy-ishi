@@ -137,6 +137,12 @@ class MyDate:
 # print(sana)  # 01-Mart 2023 yil
 
 #Test Case 8: Yil boshiga qaytish (O'tgan kun)
-sana = MyDate(1, 1, 2023)
-sana.previousDay()
-print(sana)  # 31-Dekabr 2022 yil
+# sana = MyDate(1, 1, 2023)
+# sana.previousDay()
+# print(sana)  # 31-Dekabr 2022 yil
+
+#Test Case 9: Noto'g'ri sana (yil cheklovi)
+try:
+    sana = MyDate(15, 6, 10000)
+except ValueError as e:
+    print(e)  # Noto'g'ri sana kiritildi!

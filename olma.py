@@ -132,6 +132,11 @@ class MyDate:
 # print(sana)  # 01-Mart 2024 yil
 
 #Test Case 7: Kabisa bo'lmagan yilda fevral uchun max kun
-sana = MyDate(28, 2, 2023)
-sana.nextDay()
-print(sana)  # 01-Mart 2023 yil
+# sana = MyDate(28, 2, 2023)
+# sana.nextDay()
+# print(sana)  # 01-Mart 2023 yil
+
+#Test Case 8: Yil boshiga qaytish (O'tgan kun)
+sana = MyDate(1, 1, 2023)
+sana.previousDay()
+print(sana)  # 31-Dekabr 2022 yil

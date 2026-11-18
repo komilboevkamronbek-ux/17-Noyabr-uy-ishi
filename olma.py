@@ -154,7 +154,12 @@ class MyDate:
 #     print(e)  # Noto'g'ri sana kiritildi
 
 #Test Case 11: Noto'g'ri sana (kun cheklovi)
-try:
-    sana = MyDate(32, 5, 2023)
-except ValueError as e:
-    print(e)  # Noto'g'ri sana kiritildi!
+# try:
+#     sana = MyDate(32, 5, 2023)
+# except ValueError as e:
+#     print(e)  # Noto'g'ri sana kiritildi!
+
+#Test Case 12: Sana o'zgartirish (setDate())
+sana = MyDate(15, 6, 2023)
+sana.setDate(5, 7, 2023)
+print(sana)  # 05-Iyul 2023 yil

@@ -102,6 +102,11 @@ class MyDate:
         return f"{self.__day:02d}-{self.MONTHS[self.__month - 1]} {self.__year} yil"
 
 # Test Case 1: Oddiy sana o'tkazish (Kelasi kun)
-sana = MyDate(15,6,2023)
+# sana = MyDate(15,6,2023)
+# sana.nextDay()
+# print(sana)
+
+# Test Case 2: Oy oxiri (Kelasi kun)
+sana = MyDate(30, 4, 2023)
 sana.nextDay()
-print(sana)
+print(sana)  # 01-May 2023 yil
